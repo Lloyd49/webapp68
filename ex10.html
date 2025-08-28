@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .polkadot{
+            --bg: #d9d9d9;
+            --size: 48px;
+            --dot: 4px;
+            --dot1: #111;
+            --dot2: #ff0000; 
+            width: 180px;
+            height: 240px;
+            background:
+                radial-gradient(circle, var(--dot1) var(--dot), transparent var(--dot))
+                0 0 / var(--size) var(--size),
+                radial-gradient(circle, var(--dot2) var(--dot), transparent var(--dot))
+                calc(var(--size)/2) calc(var(--size)/2) / var(--size) var(--size);
+            background-color: var(--bg);
+        }
+        .box{
+            border: 2px solid gray;
+            padding: 10px;
+            overflow: auto;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="polkadot"></div>
+    </div>
+</body>
+</html>

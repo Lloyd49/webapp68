@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<title>Floating Section Headings</title>
+<style>
+    body {
+        font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#efefef;padding:24px
+    }
+    .panel {
+        width: 360px;
+        max-height: 420px;          
+        overflow: auto;
+        background:#2d5a93;
+        color:#e9f1ff;
+        border-radius: 18px;
+        padding: 14px 12px;
+        margin-left: 260px;         
+    }
+    .section{
+        display:grid;
+        grid-template-columns: 44px 1fr;
+        column-gap: 14px;
+        align-items:start;
+        margin-bottom: 10px;
+    }
+    .badge{
+        top: 8px;                   
+        width: 36px; height: 36px;
+        border-radius: 50%;
+        background:#2e3944;
+        color:#e8edf3;
+        display:grid; place-items:center;
+        font-weight:700;
+        box-shadow: inset 0 0 0 2px rgba(255,255,255,.12);
+    } 
+    ul {
+        list-style:none; margin:0; padding:0
+    }
+    li {
+        padding:10px 0; border-bottom:1px solid rgba(255,255,255,.08)
+    }
+    li:last-child {
+        border-bottom:0
+    }
+</style>
+</head>
+<body>
+    <div>Preview:</div>
+    <div class="panel">
+    <div class="section">
+    <div class="badge">A</div>
+    <ul>
+        <li>Aaban</li>
+        <li>Aabel</li>
+        <li>Aabheer</li>
+        <li>Aadam</li>
+    </ul>
+    </div>
+    <div class="section">
+    <div class="badge">B</div>
+    <ul>
+        <li>Baabul</li>
+        <li>Baalaji</li>
+        <li>Baalkrishan</li>
+        <li>Baanake Bihaari</li>
+    </ul>
+    </div>
+    <div class="section">
+    <div class="badge">C</div>
+    <ul>
+        <li>Caddam</li>
+        <li>Charlie</li>
+        <li>Celene</li>
+        <li>Central</li>
+    </ul>
+    </div>
+    </div>
+</body>
+</html>

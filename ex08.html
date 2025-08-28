@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+  }
+
+  .menu-container {
+    position: relative;
+  }
+
+  .menu-button {
+    width: 100px;
+    height: 100px;
+    background: rgb(75, 0, 94);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu {
+    position: absolute;
+    top: 110px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    min-width: 120px;
+    cursor: pointer;
+  }
+
+  a {
+    padding: 10px 14px;
+    color: #333;
+    transition: 0.3s;
+  }
+  a:hover {
+    background: #cccccc;
+  }
+
+  .menu-container:hover .menu,
+  .menu-container:focus .menu {
+    display: flex;
+  }
+  </style>
+</head>
+<body>
+  <div class="menu-container" tabindex="0">
+    <div class="menu-button"></div>
+      <div class="menu">
+        <a>Home</a>
+        <a>Profile</a>
+        <a>Settings</a>
+        <a>Logout</a>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid rgb(255, 230, 118);
+            
+        }
+        form:focus-within {
+            background-color: rgb(202, 243, 179);
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div style="border: 1px solid; height: 120px; padding: 15px 20px;">
+        <form>
+            <table>
+                <tr style="width: 25px;">
+                    <td>username</td>
+                    <td><input type="text" name="user"></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><input type="password" name="pass" value="password"></td>
+                </tr>
+            </table>
+
+            <br>
+        </form>
+    </div>
+</body>
+</html>

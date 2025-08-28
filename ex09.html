@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .case {
+      margin: 30px;
+      display: flex;
+      gap: 80px;
+      font-size:30px;
+      border: 2px solid gray;
+      padding: 20px;
+      height: 250px;
+    }
+
+    .case div {
+      transition: opacity 0.4s;
+      cursor: pointer;
+    }
+
+    .case:hover div {
+      opacity: 0.3;
+    }
+
+    .case div:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="case">
+    <div>Case 1</div>
+    <div>Case 2</div>
+    <div>Case 3</div>
+  </div>
+</body>
+</html>
